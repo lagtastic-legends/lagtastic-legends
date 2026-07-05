@@ -1,0 +1,27 @@
+{
+  "overview": "LAGTASTIC LEGENDS is a premium all-in-one browser-based media and document utility app with client-side audio/video conversion, GIF making, PDF tools, secure vault, and file management.",
+  "features": [
+    "Audio and video converter with extract, format change, compress, and mute modes",
+    "GIF Maker from video clips or photo sequences",
+    "Ringtone Maker with interactive waveform editor and fade effects",
+    "ID3 Tag Editor for MP3 and FLAC metadata including cover art",
+    "Audio and video merger and splitter",
+    "PDF tools: image to PDF, text to PDF, merge, password lock, and scan to PDF",
+    "Generic media downloader by URL",
+    "PIN-protected Secure Vault for private files",
+    "Smart File Manager to view, rename, share, and delete generated files",
+    "Premium deep navy and electric cyan branding with spring-physics animations"
+  ],
+  "category": "media-utility",
+  "tags": [
+    "media-converter",
+    "gif-maker",
+    "pdf-tools",
+    "secure-vault",
+    "file-manager",
+    "ffmpeg",
+    "animations",
+    "premium-ui"
+  ],
+  "last_updated": "2026-05-21T12:44:19.262Z"
+}

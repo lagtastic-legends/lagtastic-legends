@@ -1,0 +1,38 @@
+type VaultEntry = 
+ record {
+   blobRef: opt text;
+   createdAt: Timestamp;
+   id: EntryId;
+   mimeType: text;
+   name: text;
+   size: nat;
+   tags: vec text;
+   updatedAt: Timestamp;
+ };
+type Timestamp = int;
+type FileEntry = 
+ record {
+   category: text;
+   createdAt: Timestamp;
+   id: EntryId;
+   mimeType: text;
+   name: text;
+   size: nat;
+   updatedAt: Timestamp;
+ };
+type EntryId = text;
+service : {
+  createFileEntry: (id: EntryId, name: text, size: nat, mimeType: text,
+   category: text) -> (FileEntry);
+  createVaultEntry: (id: EntryId, name: text, mimeType: text, size: nat,
+   tags: vec text, blobRef: opt text) -> (VaultEntry);
+  deleteFileEntry: (id: EntryId) -> (bool);
+  deleteVaultEntry: (id: EntryId) -> (bool);
+  getFileEntry: (id: EntryId) -> (opt FileEntry) query;
+  getVaultEntry: (id: EntryId) -> (opt VaultEntry) query;
+  listFileEntries: () -> (vec FileEntry) query;
+  listVaultEntries: () -> (vec VaultEntry) query;
+  renameFileEntry: (id: EntryId, name: text) -> (opt FileEntry);
+  updateVaultEntry: (id: EntryId, name: text, tags: vec text, blobRef:
+   opt text) -> (opt VaultEntry);
+}
